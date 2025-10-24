@@ -1,12 +1,13 @@
-import Aboutsection from "../components/About-section"
+import AboutSection from "../components/About-section"
 
 
-function Aboutview() {
+
+export default function AboutView() {
   return (
     <div>
-      <Aboutsection />
+      <AboutSection />
     </div>
   )
 }
 
-export default Aboutview
+

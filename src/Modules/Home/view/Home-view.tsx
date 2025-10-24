@@ -1,14 +1,17 @@
-import Homelanding from "../components/Home-landing"
-import Homenavbar from "../components/Home-navbar"
+
+import HomeLanding from "../components/Home-landing"
+import HomeNavbar from "../components/home-navbar"
 
 
-function Homeview() {
+
+
+export default function HomeView() {
   return (
     <div>
-      <Homenavbar />
-      <Homelanding />
+      <HomeNavbar />
+      <HomeLanding />
     </div>
   )
 }
 
-export default Homeview
+

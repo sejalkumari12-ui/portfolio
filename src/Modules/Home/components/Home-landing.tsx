@@ -1,6 +1,6 @@
 import { SplineScene } from "@/components/ui/splite"
 
-function Homelanding() {
+export default function HomeLanding() {
   return (
     <div className="min-h-screen w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10">
       {/* Left Side - Text Content */}
@@ -33,4 +33,4 @@ function Homelanding() {
   )
 }
 
-export default Homelanding
+

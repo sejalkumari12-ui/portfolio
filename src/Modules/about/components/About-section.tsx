@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Homenavbar from "@/Modules/Home/components/Home-navbar"
+import Homenavbar from "@/modules/home/components/home-navbar"
 import { motion } from "framer-motion"
 import { Code2, Globe, Sparkles } from "lucide-react"
 

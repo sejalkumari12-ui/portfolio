@@ -6,7 +6,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 
-function Homenavbar() {
+ export default function HomeNavbar  () {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md text-white py-4 px-8 flex justify-between items-center shadow-md z-50">
       {/* ---------- Left Side: Logo ---------- */}
@@ -35,7 +35,7 @@ function Homenavbar() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link to="/projects" className="text-gray-300 hover:text-blue-400 transition">
+              <Link to="/project" className="text-gray-300 hover:text-blue-400 transition">
                 Projects
               </Link>
             </NavigationMenuLink>
@@ -54,4 +54,4 @@ function Homenavbar() {
   )
 }
 
-export default Homenavbar
+

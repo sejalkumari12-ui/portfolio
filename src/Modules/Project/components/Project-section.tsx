@@ -10,43 +10,43 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-function Projectsection() {
+export default function ProjectSection() {
   const data = [
     {
       id: 1,
       img: gemini,
       name: "Gemini Clone",
       about:
-        "A modern AI chat application inspired by Google Gemini, built with React and plain CSS. Supports real-time AI conversations, saved prompts, and a responsive, interactive UI.",
+        "A modern AI chat application inspired by Google Gemini, built with React and CSS. Supports real-time AI conversations, saved prompts, and a responsive, interactive UI.",
     },
     {
       id: 2,
       img: grocify,
       name: "Grocify",
       about:
-        "Built a Multipage Grocery Website using React JS and Tailwind CSS, featuring smooth navigation with React Router DOM, responsive sliders with Swiper JS, and elegant visuals enhanced by React Icons.",
+        "A multipage grocery website built with React JS and Tailwind CSS. Features smooth navigation (React Router DOM), responsive sliders (Swiper JS), and elegant visuals (React Icons).",
     },
     {
       id: 3,
       img: refokus,
       name: "Refokus Clone",
       about:
-        "Frontend A pixel-perfect, fully responsive clone of the Refokus agency website, built with React and Tailwind CSS. Recreated modern animations, smooth transitions, and dynamic layouts to closely match the original design and interactivity",
+        "A pixel-perfect, fully responsive clone of the Refokus agency website built with React and Tailwind CSS. Includes smooth animations and dynamic layouts matching the original site.",
     },
   ];
 
   return (
-    <section className="py-10 px-5 bg-black">
+    <section className="py-10 px-5 bg-black text-white">
       <div className="mb-8 text-center">
-        <h1 className="text-3xl font-bold">Here are my top 3 projects</h1>
+        <h1 className="text-3xl font-bold">Here are my Top 3 Projects</h1>
       </div>
 
       <div className="grid md:grid-cols-3 gap-6">
         {data.map((project) => (
-          <Card key={project.id} className="hover:shadow-lg transition-shadow">
+          <Card key={project.id} className="hover:shadow-lg transition-shadow bg-gray-900 border border-gray-700">
             <CardHeader>
               <CardTitle>{project.name}</CardTitle>
-              <CardDescription>{project.about}</CardDescription>
+              <CardDescription className="text-gray-400">{project.about}</CardDescription>
             </CardHeader>
             <CardContent>
               <img
@@ -58,9 +58,9 @@ function Projectsection() {
             <CardFooter>
               <a
                 href="#"
-                className="text-blue-500 hover:underline"
+                className="text-blue-400 hover:underline"
               >
-                View Project
+                View Project →
               </a>
             </CardFooter>
           </Card>
@@ -69,5 +69,3 @@ function Projectsection() {
     </section>
   );
 }
-
-export default Projectsection;

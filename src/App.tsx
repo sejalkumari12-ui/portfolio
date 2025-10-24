@@ -1,14 +1,14 @@
-import Aboutview from "./Modules/about/view/Aboutview"
-import Homeview from "./Modules/Home/view/Home-view"
 import { Routes, Route } from "react-router-dom"
-import ProjectView from "./Modules/Project/view/ProjectView"
+import ProjectView from "./modules/Project/view/project-view"
+import HomeView from "./modules/home/view/Home-view"
+import AboutView from "./modules/about/view/Aboutview"
 
 
 function App() {
   return (
  <Routes>
-  <Route path="/" element={<Homeview />}/>
-  <Route path="/about" element={<Aboutview/>} />
+  <Route path="/" element={<HomeView />}/>
+  <Route path="/about" element={<AboutView/>} />
   <Route path="/project" element={<ProjectView/>} />
  </Routes>
   )
