@@ -36,7 +36,7 @@ function AboutSection() {
    
     <section className="bg-black text-white min-h-screen flex flex-col justify-center items-center py-6 px-4 md:px-16">
        <Homenavbar />
-      {/* Heading */}
+      
       <div className="text-center mb-12">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -58,7 +58,7 @@ function AboutSection() {
         </motion.p>
       </div>
 
-      {/* Cards Section */}
+      
       <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto w-full px-4">
         {skills.map((skill, index) => (
           <motion.div
