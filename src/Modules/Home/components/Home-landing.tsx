@@ -1,4 +1,5 @@
 import { SplineScene } from "@/components/ui/splite"
+import { Link } from "react-router-dom"
 
 export default function HomeLanding() {
   return (
@@ -17,9 +18,9 @@ export default function HomeLanding() {
           TypeScript, and Tailwind CSS.
         </p>
 
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg w-fit transition duration-300 shadow-lg">
+        <Link to="/project" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg w-fit transition duration-300 shadow-lg">
           View My Projects
-        </button>
+        </Link>
       </div>
 
       {/* Right Side - Large 3D Spline Scene */}
