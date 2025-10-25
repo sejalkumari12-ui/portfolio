@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import gemini from "../../../assets/Gemini.png"
 import grocify from "../../../assets/Grocify.png"
 import refokus from "../../../assets/Refokus.png"
+import dashboard from "../../../assets/Dashboard.png"
 import {
   Card,
   CardContent,
@@ -18,25 +19,29 @@ export default function ProjectSection() {
       id: 1,
       img: gemini,
       name: "Gemini Clone",
-      about:
-        "A modern AI chat app inspired by Google Gemini — built with React and CSS. Features real-time AI chat, saved prompts, and a responsive, interactive UI.",
+      about:"A modern AI chat app inspired by Google Gemini — built with React and CSS. Features real-time AI chat, saved prompts, and a responsive, interactive UI.",
       link: "https://gemini-clone-pi-black.vercel.app/",
     },
     {
       id: 2,
       img: grocify,
       name: "Grocify",
-      about:
-        "A multipage grocery website built with React JS & Tailwind CSS. Includes smooth navigation (React Router DOM), responsive sliders (Swiper JS), and icons (React Icons).",
+      about:"A multipage grocery website built with React JS & Tailwind CSS. Includes smooth navigation (React Router DOM), responsive sliders (Swiper JS), and icons (React Icons).",
       link: "https://grocery-website-sage.vercel.app/",
     },
     {
       id: 3,
       img: refokus,
       name: "Refokus Clone",
-      about:
-        "A pixel-perfect, fully responsive clone of the Refokus agency site — built using React and Tailwind CSS with smooth animations and dynamic layouts.",
+      about:"A pixel-perfect, fully responsive clone of the Refokus agency site — built using React and Tailwind CSS with smooth animations and dynamic layouts.",
       link: "https://refokus-clone-13p6z0lc9-sejal-kumari-s-projects.vercel.app/",
+    },
+    {
+      id: 4,
+      img: dashboard,
+      name: "Dashboard",
+      about: "Student Dashboard is a web application built with React and Firebase Realtime Database",
+      link: "https://firebase-project-iri1y14wm-sejal-kumari-s-projects.vercel.app/",
     },
   ]
 
